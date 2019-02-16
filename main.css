@@ -1,14 +1,18 @@
+body{
+  background-color:lightgray;
+}
+
 div {
   text-align: center;
   padding: 150px;
 }
 svg {
-	fill:black;
+	fill: turquoise;
 	}
 
 	#background {
 	fill:none;
-	stroke:#000000;
+	stroke:rgb(255, 65, 168);
 	stroke-miterlimit:50;
 	stroke-dasharray: 300;
 	stroke-dashoffset:0;
@@ -34,11 +38,12 @@ svg {
     50% {
       opacity: 0;
       transform:skewX(2deg);
+      transform:skewY(2deg);
       }
     }
 @-webkit-keyframes dash {
 	0%, 100%{
-  stroke-dashoffset: 1000;
+  stroke-dashoffset: 1000px;
   transform:skewY(15deg)
 	}
 	50% {
